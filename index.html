@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyaa</title>
+  <meta charset="UTF-8" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="CSS\style.css" />
 </head>
 <body>
-    
+
+  <div class="app">
+    <h1>Todo List</h1>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Write a task..." />
+      <input type="date" id="dateInput" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="filterInput" placeholder="Filter task..." />
+      <button id="clearBtn">Clear All</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="taskList">
+        <tr class="empty">
+          <td colspan="4">No task available</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js\script.js"></script>
 </body>
 </html>
